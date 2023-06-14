@@ -1,0 +1,94 @@
+.profile{
+    flex-basis: 25%;
+    height: 90vh;
+    border-right: 1px solid #ccc;
+ 
+}
+.profile__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile__header img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.profile__header p{
+    font-size: 20px;
+}
+.profile h2{
+    font-weight: 500;
+}
+.profile__header .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.profile__header .actions a{
+    text-decoration: none;
+    padding: 3px 10px;
+    color: #fff;
+    min-width: 150px;
+    text-align: center;
+    margin: 2px 0;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.actions a:hover{
+    opacity: .8;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.5);
+    
+}
+.attendence__grade{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.attendence__grade .grade__full{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(127, 169, 190);
+    position: relative;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.attendence__grade .grade__current{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 40%;
+    background-color: rgb(4, 112, 40);
+    border-radius: 5px;
+
+}
+.attendence__grade span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+}
+.attendence__grade .grade{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(127, 169, 190);
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(4, 112, 40);
+}
+.attendence__grade .grade p{
+    color: #fff;
+    font-size: 20px;
+
+}

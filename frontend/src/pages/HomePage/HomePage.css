@@ -8,5 +8,13 @@
     flex-basis: 82%;
 }
 .contents{
-    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.contents .body{
+    flex-basis: 75%;
+    margin-left: 10px;
 }
