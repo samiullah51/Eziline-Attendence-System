@@ -1,0 +1,12 @@
+.home__page{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.home__contents{
+    flex-basis: 82%;
+}
+.contents{
+    padding: 20px;
+}

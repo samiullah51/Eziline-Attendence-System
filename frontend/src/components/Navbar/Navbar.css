@@ -1,0 +1,24 @@
+.navbar{
+background-color: rgb(15, 15, 68);
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+}
+.navbar h2{
+    font-weight: 500;
+}
+.navbar button{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.navbar button:hover{
+    background-color: rgb(221, 221, 221);
+}
