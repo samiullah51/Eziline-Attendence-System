@@ -1,0 +1,40 @@
+.recent__attendence{
+    padding: 10px;
+    margin: 10px 0;
+}
+.recent__attendence h2{
+    font-weight: 400;
+}
+.single__attendence{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.single__attendence .subject{
+    font-weight: bold;
+}
+.single__attendence a{
+    text-decoration: none;
+    background-color: rgb(19, 107, 194);
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 2px;
+}
+.single__attendence a:hover{
+    background-color: rgb(10, 54, 99);
+
+}
+.single__attendence .status{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    border-radius: 2px;
+}
