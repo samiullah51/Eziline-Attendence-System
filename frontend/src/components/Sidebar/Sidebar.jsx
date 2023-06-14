@@ -1,17 +1,20 @@
 import React from "react";
 import "./Sidebar.css";
-import logo from "../../assets/R.png";
-import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import { Link, NavLink } from "react-router-dom";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
+import SelfImprovementOutlinedIcon from "@mui/icons-material/SelfImprovementOutlined";
+import DomainVerificationIcon from "@mui/icons-material/DomainVerification";
+import CancelIcon from "@mui/icons-material/Cancel";
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <img
-          src="https://th.bing.com/th/id/R.5dd7dc23816207e44166922b39ac6dd1?rik=r9w4i8BqwH9wyg&riu=http%3a%2f%2fwww.eziline.com%2fwp-content%2fuploads%2flogo.png&ehk=jb2o%2f0gxopNSoXhws0UiLtiMszursCkuueLLGLbK4b4%3d&risl=&pid=ImgRaw&r=0"
-          alt=""
-        />
+        <Link to="/">
+          <img src={logo} alt="" />
+        </Link>
       </div>
 
       {/* Sidebar Links */}
@@ -24,10 +27,22 @@ function Sidebar() {
           <TaskAltIcon />
           <span>Mark Attendence</span>
         </NavLink>
-        <NavLink to="/viewatt">View Attendence</NavLink>
-        <NavLink to="/leaverequest">Leave Request</NavLink>
-        <NavLink to="/presenties">Presenties</NavLink>
-        <NavLink to="/absenties">Absenties</NavLink>
+        <NavLink to="/veiwatt">
+          <RemoveRedEyeOutlinedIcon />
+          <span>View Attendence</span>
+        </NavLink>
+        <NavLink to="/leaverequest">
+          <SelfImprovementOutlinedIcon />
+          <span>Leave Request</span>
+        </NavLink>
+        <NavLink to="/presenties">
+          <DomainVerificationIcon />
+          <span>Presenties</span>
+        </NavLink>
+        <NavLink to="/absenties">
+          <CancelIcon />
+          <span>Absenties</span>
+        </NavLink>
       </div>
     </div>
   );
