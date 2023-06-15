@@ -19,7 +19,7 @@ function HomePage() {
             {/* Cards */}
             <Cards />
             {/* recent attendence */}
-            <RecentAttendence />
+            <RecentAttendence title="Recent Attendence" />
             {/* recent leaves */}
             <RecentLeaves />
           </div>

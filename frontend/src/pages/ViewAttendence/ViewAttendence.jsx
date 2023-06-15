@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
+import RecentAttendence from "../../components/RecentAttendence/RecentAttendence";
 
 function ViewAttendence() {
   return (
@@ -8,8 +9,8 @@ function ViewAttendence() {
       <Sidebar />
       <div className="home__contents">
         <Navbar />
-        <div className="contents">
-          <h1>View Attendence</h1>
+        <div className="contents__veiw">
+          <RecentAttendence title="Attendence Records" />
         </div>
       </div>
     </div>

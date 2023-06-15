@@ -1,0 +1,15 @@
+.mark__contents{
+    padding: 15px;
+}
+.mark__contents .time{
+    font-size:22px;
+    margin: 5px 0;
+
+}
+.mark__contents .time span{
+    font-weight: bold;
+}
+.mark__contents h1{
+    font-weight: 500;
+    font-size: 30px;
+}

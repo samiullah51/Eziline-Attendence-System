@@ -1,10 +1,10 @@
 import React from "react";
 import SingleAttendence from "./SingleAttendence/SingleAttendence";
 
-function RecentAttendence() {
+function RecentAttendence({ title }) {
   return (
     <div className="recent__attendence">
-      <h2>Recent Attendence</h2>
+      <h2>{title}</h2>
       <SingleAttendence att="Present" />
       <SingleAttendence att="Absent" />
       <SingleAttendence att="Present" />
