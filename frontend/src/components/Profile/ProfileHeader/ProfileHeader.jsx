@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
 function ProfileHeader() {
+  const [image, setImage] = useState(null);
+
+  const handleChange = (image) => {
+    setImage(URL.createObjectURL(image));
+  };
   return (
     <div className="profile__header">
       {/* user info */}
-      <img
-        src="https://th.bing.com/th/id/OIP.OipeUJzND5tgNZVYF91-qgAAAA?pid=ImgDet&w=300&h=300&rs=1"
-        alt=""
-      />
+      <div className="user__info">
+        {!image ? (
+          <img
+            src="https://th.bing.com/th/id/OIP.OipeUJzND5tgNZVYF91-qgAAAA?pid=ImgDet&w=300&h=300&rs=1"
+            alt=""
+          />
+        ) : (
+          <img src={image} alt="" />
+        )}
+        <label htmlFor="image" className="icon">
+          <input
+            type="file"
+            id="image"
+            onChange={(e) => handleChange(e.target.files[0])}
+          />
+          <CameraAltOutlinedIcon />
+        </label>
+      </div>
+      {/* update btn */}
+      {image && <button className="update__btn">Update Now</button>}
       <p>Samiullah</p>
       <h2>MERN Stack Developer</h2>
       <p>Peshawar, Pakistan</p>
