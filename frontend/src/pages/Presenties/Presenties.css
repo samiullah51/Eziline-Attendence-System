@@ -1,0 +1,10 @@
+.contents__Presenties{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.contents__Presenties h1{
+    font-weight: 400;
+}

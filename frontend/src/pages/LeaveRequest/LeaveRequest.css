@@ -1,0 +1,75 @@
+.contents__leave{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.contents__leave h1{
+    font-weight: 400;
+}
+.contents__leave .leave__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.leave__form .single__input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+.single__input label{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.single__input input, .single__input textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+.single__input input:focus, .single__input textarea:focus{
+    outline-color: rgb(8, 53, 104);
+}
+.single__input textarea{
+    resize: none;
+    height: 300px;
+
+}
+.leave__form .btns{
+    align-self: flex-end;
+    margin-top: 5px;
+}
+.leave__form .btns button{
+    margin-left: 5px ;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.2);
+    transition: .2s;
+    cursor: pointer;
+}
+.leave__form .btns .send{
+    background-color: dodgerblue;
+
+
+}
+.leave__form .btns .send:hover{
+    background-color: rgb(4, 67, 131);
+
+
+}
+
+.leave__form .btns .cancel{
+    background-color: red;
+}
+
+.leave__form .btns .cancel:hover{
+    background-color: rgb(189, 4, 4);
+}

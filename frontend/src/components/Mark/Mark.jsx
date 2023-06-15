@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Mark() {
   const [att, setAtt] = useState("Present");
   let percentBgColor = "";
-  const percentAtt = 72;
+  const percentAtt = 89;
   if (percentAtt >= 85 && percentAtt <= 100) {
     percentBgColor = "#08cb63";
   } else if (percentAtt >= 75 && percentAtt < 85) {
