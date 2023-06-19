@@ -1,0 +1,11 @@
+
+.contents__absenties{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.contents__absenties h1{
+    font-weight: 400;
+}

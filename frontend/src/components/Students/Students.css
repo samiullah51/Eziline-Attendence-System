@@ -1,5 +1,4 @@
-.all__students{
-}
+
 .single__student{
     margin: 10px 0;
     padding: 5px 10px;
@@ -8,6 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
+    text-decoration: none;
+    color: #000;
 }
 .single__student img{
     width: 50px;
@@ -24,4 +26,8 @@
     width: 50px;
     display: grid;
     place-items: center;
+}
+.single__student:hover{
+    cursor: pointer;
+background-color: #e6e6e6cc;
 }

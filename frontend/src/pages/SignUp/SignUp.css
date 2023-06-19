@@ -1,0 +1,15 @@
+.sign__up{
+    background-color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sign__up .signup__form{
+    width: 400px;
+    border: 1px solid #cccccc6b;
+    padding: 10px ;
+    border-radius: 4px;
+}

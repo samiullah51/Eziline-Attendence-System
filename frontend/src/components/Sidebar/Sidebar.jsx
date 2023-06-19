@@ -9,6 +9,7 @@ import SelfImprovementOutlinedIcon from "@mui/icons-material/SelfImprovementOutl
 import DomainVerificationIcon from "@mui/icons-material/DomainVerification";
 import CancelIcon from "@mui/icons-material/Cancel";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import DocumentScannerOutlinedIcon from "@mui/icons-material/DocumentScannerOutlined";
 function Sidebar() {
   const isAdmin = true;
   return (
@@ -56,6 +57,14 @@ function Sidebar() {
           <NavLink to="/students">
             <SchoolOutlinedIcon />
             <span>Students</span>
+          </NavLink>
+          <NavLink to="/leaverequest">
+            <SelfImprovementOutlinedIcon />
+            <span>Leave Request</span>
+          </NavLink>
+          <NavLink to="/report">
+            <DocumentScannerOutlinedIcon />
+            <span>Report</span>
           </NavLink>
         </div>
       )}

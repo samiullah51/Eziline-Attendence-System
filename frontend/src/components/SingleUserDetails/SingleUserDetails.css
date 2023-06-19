@@ -1,0 +1,62 @@
+.single__user__details{}
+.single__user__details .user__info{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+}
+.single__user__details .user__info img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid dodgerblue;
+    padding: 1px;
+}
+.single__user__details .user__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.user__header p{
+    font-size: 20px;
+}
+.user__footer{
+    width: 100%;
+}
+.user__footer button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.2);
+   margin-left: auto;
+   transition: .2s;
+}
+.user__footer button:hover{
+    background-color: rgb(13, 102, 192);
+}
+.user__body{
+    font-size: 22px;
+    margin: 5px 0;
+}
+.single__user__details .user__footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.user__footer .att__per{
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 9px 1px rgbar(0,0,0,0.2);
+}

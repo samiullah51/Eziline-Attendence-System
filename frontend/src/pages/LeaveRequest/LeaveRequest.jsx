@@ -4,29 +4,32 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./LeaveRequest.css";
 import RecentLeaves from "../../components/RecentLeaves/RecentLeaves";
 function LeaveRequest() {
+  const isAdmin = true;
   return (
     <div className="home__page">
       <Sidebar />
       <div className="home__contents">
         <Navbar />
         <div className="contents__leave">
-          <h1>Leave Request</h1>
+          <h1>Leave Requests</h1>
           {/* leave form */}
-          <div className="leave__form">
-            <div className="single__input">
-              <label htmlFor="">Subject</label>
-              <input type="text" autoFocus />
+          {!isAdmin && (
+            <div className="leave__form">
+              <div className="single__input">
+                <label htmlFor="">Subject</label>
+                <input type="text" autoFocus />
+              </div>
+              <div className="single__input">
+                <label htmlFor="">Description</label>
+                <textarea></textarea>
+              </div>
+              {/* buttons */}
+              <div className="btns">
+                <button className="cancel">Cancel</button>
+                <button className="send">Send Request</button>
+              </div>
             </div>
-            <div className="single__input">
-              <label htmlFor="">Description</label>
-              <textarea></textarea>
-            </div>
-            {/* buttons */}
-            <div className="btns">
-              <button className="cancel">Cancel</button>
-              <button className="send">Send Request</button>
-            </div>
-          </div>
+          )}
           {/* previous leave request */}
           <RecentLeaves />
         </div>
