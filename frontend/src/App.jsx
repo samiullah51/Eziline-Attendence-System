@@ -10,11 +10,13 @@ import LeaveDetails from "./pages/LeaveDetails/LeaveDetails";
 import Students from "./pages/Students/Students";
 import SingleStudentDetails from "./pages/SingleStudentDetails/SingleStudentDetails";
 import SignUp from "./pages/SignUp/SignUp";
+import SignIn from "./pages/SignIn/SignIn";
 function App() {
   const isAdmin = true;
   return (
     <>
-      <SignUp />
+      {/* <SignUp /> */}
+      <SignIn />
       {/* {!isAdmin ? (
         <Routes>
           <Route path="/" element={<HomePage />} />
