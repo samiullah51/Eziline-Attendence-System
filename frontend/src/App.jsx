@@ -7,18 +7,28 @@ import LeaveRequest from "./pages/LeaveRequest/LeaveRequest";
 import Presenties from "./pages/Presenties/Presenties";
 import Absenties from "./pages/Absenties/Absenties";
 import LeaveDetails from "./pages/LeaveDetails/LeaveDetails";
+import Students from "./pages/Students/Students";
 function App() {
+  const isAdmin = true;
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/markatt" element={<MarkAttendence />} />
-        <Route path="/veiwatt" element={<ViewAttendence />} />
-        <Route path="/leaverequest" element={<LeaveRequest />} />
-        <Route path="/presenties" element={<Presenties />} />
-        <Route path="/absenties" element={<Absenties />} />
-        <Route path="/leaverequest/:leaveId" element={<LeaveDetails />} />
-      </Routes>
+      {!isAdmin ? (
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/markatt" element={<MarkAttendence />} />
+          <Route path="/veiwatt" element={<ViewAttendence />} />
+          <Route path="/leaverequest" element={<LeaveRequest />} />
+          <Route path="/presenties" element={<Presenties />} />
+          <Route path="/absenties" element={<Absenties />} />
+          <Route path="/leaverequest/:leaveId" element={<LeaveDetails />} />
+        </Routes>
+      ) : (
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/leaverequest/:leaveId" element={<LeaveDetails />} />
+        </Routes>
+      )}
     </>
   );
 }

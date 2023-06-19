@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
 function ProfileHeader() {
   const [image, setImage] = useState(null);
-
+  const isAdmin = true;
   const handleChange = (image) => {
     setImage(URL.createObjectURL(image));
   };
@@ -30,22 +30,47 @@ function ProfileHeader() {
       </div>
       {/* update btn */}
       {image && <button className="update__btn">Update Now</button>}
+      {isAdmin && (
+        <span
+          style={{
+            fontWeight: "bold",
+            border: "1px solid #ccc",
+            padding: "5px",
+            borderRadius: "4px",
+            fontSize: "14px",
+            marginTop: "10px",
+          }}
+        >
+          Admin
+        </span>
+      )}
       <p>Samiullah</p>
       <h2>MERN Stack Developer</h2>
-      <p>Peshawar, Pakistan</p>
+      <p>Peshawar, Pakistan </p>
 
       {/* Actions */}
-      <div className="actions">
-        <Link to="/markatt" style={{ backgroundColor: "rgb(4, 148, 47)" }}>
-          Mark Attendence
-        </Link>
-        <Link to="/veiwatt" style={{ backgroundColor: "rgb(11, 32, 90)" }}>
-          View Attendence
-        </Link>
-        <Link to="/leaverequest" style={{ backgroundColor: "rgb(7, 66, 134)" }}>
-          Leave Request
-        </Link>
-      </div>
+      {!isAdmin ? (
+        <div className="actions">
+          <Link to="/markatt" style={{ backgroundColor: "rgb(4, 148, 47)" }}>
+            Mark Attendence
+          </Link>
+          <Link to="/veiwatt" style={{ backgroundColor: "rgb(11, 32, 90)" }}>
+            View Attendence
+          </Link>
+          <Link
+            to="/leaverequest"
+            style={{ backgroundColor: "rgb(7, 66, 134)" }}
+          >
+            Leave Request
+          </Link>
+        </div>
+      ) : (
+        <div className="actions">
+          <Link to="/markatt" style={{ backgroundColor: "rgb(4, 148, 47)" }}>
+            Create Report
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

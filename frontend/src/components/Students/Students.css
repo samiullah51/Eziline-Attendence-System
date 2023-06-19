@@ -1,0 +1,27 @@
+.all__students{
+}
+.single__student{
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single__student img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    padding: 1px;
+}
+.single__student .att__per, .single__student .att__grade{
+    background-color: rgb(25, 184, 59);
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+}

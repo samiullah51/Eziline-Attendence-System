@@ -3,13 +3,19 @@ import "./Profile.css";
 import ProfileHeader from "./ProfileHeader/ProfileHeader";
 import AttendenceGrade from "./AttendenceGrade/AttendenceGrade";
 function Profile() {
+  const isAdmin = true;
   return (
     <div className="profile">
       {/* profile Header */}
       <ProfileHeader />
-      {/* attendence record */}
-      <AttendenceGrade title="Attendence Record" />
-      <AttendenceGrade title="Grade" />
+      {!isAdmin ? (
+        <>
+          <AttendenceGrade title="Attendence Record" />
+          <AttendenceGrade title="Grade" />
+        </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

@@ -2,7 +2,8 @@ import React from "react";
 import "./Cards.css";
 import SingleCard from "./SingleCard/SingleCard";
 function Cards() {
-  return (
+  const isAdmin = true;
+  return !isAdmin ? (
     <div className="cards">
       <SingleCard
         title="Total Working Days"
@@ -22,6 +23,17 @@ function Cards() {
         bg="rgb(214, 25, 25)"
         to="/absenties"
       />
+      <SingleCard title="Leaves" count={1} bg="#083D77" to="/leaverequest" />
+    </div>
+  ) : (
+    <div className="cards">
+      <SingleCard
+        title="Total Students"
+        count={59}
+        bg="rgb(11, 32, 90)"
+        to="/veiwatt"
+      />
+
       <SingleCard title="Leaves" count={1} bg="#083D77" to="/leaverequest" />
     </div>
   );
