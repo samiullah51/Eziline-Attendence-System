@@ -13,3 +13,58 @@
     padding: 10px ;
     border-radius: 4px;
 }
+.signup__form h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.signup__form .single__input{
+    margin: 10px 0;
+    
+}
+.signup__form .single__input label{
+    font-weight: 100;
+    color: #fff;
+
+}
+.signup__form .single__input input{
+    border: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.signup__form .single__input input:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 9px 1px rgba(255, 255, 255, 0.2);
+
+}
+.signup__form .single__input button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 9px 1px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: .1s;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.signup__form .single__input button:hover{
+    background-color: #cecece;
+}
+.signup__form .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    color: #fff;
+    margin-right: 5px;
+}
+.footer a{
+    color: dodgerblue;
+}
